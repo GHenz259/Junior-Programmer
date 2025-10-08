@@ -1718,6 +1718,7 @@ GameObject:
   - component: {fileID: 1800427062026609039}
   - component: {fileID: 6237217573498527734}
   - component: {fileID: 4937436478161586583}
+  - component: {fileID: 2315151465053064592}
   m_Layer: 0
   m_Name: Animal_Horse_Black
   m_TagString: Untagged
@@ -1781,6 +1782,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
   speed: 35
+--- !u!114 &2315151465053064592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7566450431179561914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4cc182f0c2cb064db8103793a102c5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
 --- !u!1 &7593961666257030579
 GameObject:
   m_ObjectHideFlags: 0

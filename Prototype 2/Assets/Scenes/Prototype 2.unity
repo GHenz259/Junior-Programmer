@@ -929,7 +929,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6597029922293552758, guid: 732ce35bdfa1d42418678f3ecf2d645c, type: 3}
       propertyPath: m_Name
-      value: Food_Banana_01
+      value: Banana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
