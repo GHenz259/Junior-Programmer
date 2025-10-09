@@ -762,8 +762,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   horizontalInput: 0
-  speed: 10
-  xRange: 10
+  speed: 40
+  xRange: 20
   projectilePrefab: {fileID: 6597029922293552758, guid: 732ce35bdfa1d42418678f3ecf2d645c, type: 3}
 --- !u!1 &1792141626
 GameObject:
@@ -798,7 +798,6 @@ MonoBehaviour:
   - {fileID: 7566450431179561914, guid: 028e0562d1989f24abb562e50b014268, type: 3}
   - {fileID: 5477146342848190018, guid: e5355fd4c817d594a8e58d3b29966136, type: 3}
   - {fileID: 7105555295280254906, guid: 3e2b2c350f0581c4e833bdc9535c4e3c, type: 3}
-  animalIndex: 0
 --- !u!4 &1792141628
 Transform:
   m_ObjectHideFlags: 0
