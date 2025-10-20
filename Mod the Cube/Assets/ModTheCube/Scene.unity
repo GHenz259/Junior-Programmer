@@ -247,9 +247,9 @@ MonoBehaviour:
   rotationSpeedX: 0
   rotationSpeedY: 0
   rotationSpeedZ: 0
-  size: 0
+  size: 101
   fluctuationSpeed: 1
-  fluidColor: 0
+  fluidColor: 1
   colorSpeed: 0.5
 --- !u!1 &705507993
 GameObject:
