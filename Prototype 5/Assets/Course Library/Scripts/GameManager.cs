@@ -20,13 +20,24 @@ public class GameManager : MonoBehaviour
 
     public Button restartButton;
 
+    public GameObject titleScreen;
+
     void Start()
+    {
+
+    }
+
+    public void StartGame(int difficulty)
     {
         StartCoroutine(SpawnTarget());
         score = 0;
         UpdateScore(0);
         isGameActive = true;
+        titleScreen.gameObject.SetActive(false);
+        spawnRate /= difficulty;
     }
+
+
 
     IEnumerator SpawnTarget()
     {
