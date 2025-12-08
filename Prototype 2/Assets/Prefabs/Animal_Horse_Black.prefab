@@ -1718,9 +1718,9 @@ GameObject:
   - component: {fileID: 1800427062026609039}
   - component: {fileID: 6237217573498527734}
   - component: {fileID: 4937436478161586583}
-  - component: {fileID: 2315151465053064592}
   - component: {fileID: 2448405235141539462}
-  - component: {fileID: -5381007663822952931}
+  - component: {fileID: 5791382594171788268}
+  - component: {fileID: -8550811931203482752}
   m_Layer: 0
   m_Name: Animal_Horse_Black
   m_TagString: Untagged
@@ -1784,18 +1784,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
   speed: 15
---- !u!114 &2315151465053064592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7566450431179561914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4cc182f0c2cb064db8103793a102c5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
 --- !u!65 &2448405235141539462
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1817,7 +1805,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 12.425342, y: 37.832733, z: 43.023487}
   m_Center: {x: 0.0048565865, y: 18.416365, z: 3.0724216}
---- !u!114 &-5381007663822952931
+--- !u!114 &5791382594171788268
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1826,7 +1814,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 7566450431179561914}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e0de2109ace50e4b929475b9d4ff3fa, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c52ee72091692143869a36cdefe1fd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
+--- !u!114 &-8550811931203482752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7566450431179561914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e62e9a8a22fac478a927ce940e28f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!1 &7593961666257030579

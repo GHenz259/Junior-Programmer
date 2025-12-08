@@ -119,6 +119,23 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &54864768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6597029922293552758, guid: 732ce35bdfa1d42418678f3ecf2d645c, type: 3}
+  m_PrefabInstance: {fileID: 7107889609010191803}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &54864776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54864768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c52ee72091692143869a36cdefe1fd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,7 +321,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: fc01a3bb589cebc4aa10892db165243b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1622352235}
+      addedObject: {fileID: 1622352238}
   m_SourcePrefab: {fileID: 100100000, guid: fc01a3bb589cebc4aa10892db165243b, type: 3}
 --- !u!1 &425805626
 GameObject:
@@ -749,7 +766,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: fc01a3bb589cebc4aa10892db165243b, type: 3}
   m_PrefabInstance: {fileID: 405958276}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1622352235
+--- !u!114 &1622352238
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -758,12 +775,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1622352234}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18fbed96185e24c47b6e7ff62fea77a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 38e917c52987daa41af6a0305d9813c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  horizontalInput: 0
-  speed: 40
-  xRange: 20
   projectilePrefab: {fileID: 6597029922293552758, guid: 732ce35bdfa1d42418678f3ecf2d645c, type: 3}
 --- !u!1 &1792141626
 GameObject:
@@ -775,6 +789,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1792141628}
   - component: {fileID: 1792141627}
+  - component: {fileID: 1792141629}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -813,6 +828,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1792141629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792141626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c0e1f24e2ce4a5b9bf1f3a7499cd45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectPooler
+  pooledObjects: []
+  objectToPool: {fileID: 6597029922293552758, guid: 732ce35bdfa1d42418678f3ecf2d645c, type: 3}
+  amountToPool: 20
 --- !u!1001 &653036520821392467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -865,7 +895,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animal_Horse_Black
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -982,7 +1014,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6597029922293552758, guid: 732ce35bdfa1d42418678f3ecf2d645c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 54864776}
   m_SourcePrefab: {fileID: 100100000, guid: 732ce35bdfa1d42418678f3ecf2d645c, type: 3}
 --- !u!1001 &7240735282778986663
 PrefabInstance:

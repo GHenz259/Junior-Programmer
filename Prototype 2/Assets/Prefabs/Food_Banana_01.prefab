@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 3223358042960840008}
   - component: {fileID: 3826543649556175667}
   - component: {fileID: 1495396587160084112}
-  - component: {fileID: 4316757939327845572}
   - component: {fileID: -1294350989959272067}
   - component: {fileID: 8664165098151740054}
+  - component: {fileID: 5295605786790368488}
   m_Layer: 0
   m_Name: Food_Banana_01
   m_TagString: Untagged
@@ -106,18 +106,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
   speed: 40
---- !u!114 &4316757939327845572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6597029922293552758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4cc182f0c2cb064db8103793a102c5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
 --- !u!54 &-1294350989959272067
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -166,3 +154,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.50622404, y: 0.47573793, z: 0.4844519}
   m_Center: {x: 0, y: 0.009565257, z: 0.021385126}
+--- !u!114 &5295605786790368488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597029922293552758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c52ee72091692143869a36cdefe1fd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
